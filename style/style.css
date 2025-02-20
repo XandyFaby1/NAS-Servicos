@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body {
+    background-color: #f2f1ef;
+    background-image: url("../assets/parede de tijolos.jpg");
+    background-size: auto;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.topo__pagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__principal {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.conteudo__servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.lista__servicos {
+    font-family: "Montserrat", serif;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 20px;
+    gap: 20px;
+    display: flex;
+    min-block-size: 40px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 8px 8px 8px 8px;
+    padding: 20px 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    white-space: nowrap; /* adiciona esta linha */
+}
+
+.icones {
+    width: 20px;
+    height: 20px;
+    gap: 10px;
+}
+
+.img-casa {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.img-corredor {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-corredor2 {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-escadas {
+    width: 600px;
+    height: 360px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-fios {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-garagem {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-parede {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-paredes {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-antes {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.img-depois {
+    width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.rodape {
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #3e28ae, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 8px 8px 8px 8px;
+}
+.rodape .text {
+   flex-shrink: 0;
+}
+.rodape__title {
+    font-family: "Montserrat", serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rodape__subtitle {
+    font-family: "Montserrat", serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+
+
+.dimencoes__video {
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+}
+
+.QR-code {
+    margin-left: 20px;
+}

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+
+@media (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        background-color: #f2f1ef;
+        background-image: url("../assets/parede de tijolos.jpg");
+        background-size: cover; /* Cobrirá toda a tela */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0; /* Remove margens padrão do body */
+    }
+    
+    .logo {
+        max-width: 200px; /* Largura máxima, permitindo adaptação */
+        height: auto; /* Altura automática para manter a proporção */
+        border-radius: 20px;
+        margin: 10px auto; /* Centraliza o logo */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+        display: block; /* Corrige um possível problema de alinhamento */
+    }
+    
+    .topo__pagina {
+        display: flex;
+        flex-direction: column; /* Layout em coluna para telas menores */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Centraliza os itens */
+        padding: 10px;
+    }
+    
+    .conteudo__principal {
+        display: flex;
+        flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
+        gap: 10px;
+        justify-content: center; /* Centraliza o conteúdo */
+        padding: 10px;
+    }
+    
+    .conteudo__servicos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Ocupa toda a largura disponível */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .lista__servicos {
+        font-family: "Montserrat", serif;
+        font-size: 14px;
+        list-style: none;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px; /* Reduz o padding */
+        margin: 5px; /* Reduz as margens */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+        text-align: center; /* Centraliza o texto */
+        width: 90%; /* Largura responsiva */
+        box-sizing: border-box; /* Inclui padding e border na largura */
+    }
+    
+    .icones {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    /* Estilos para as imagens */
+    .img-casa, .img-corredor, .img-corredor2, .img-escadas, .img-fios, .img-garagem,
+    .img-parede, .img-paredes, .img-antes, .img-depois {
+        max-width: 100%; /* Largura máxima */
+        height: auto; /* Altura automática */
+        border-radius: 20px;
+        margin: 10px auto; /* Centraliza as imagens */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+        display: block; /* Corrige um possível problema de alinhamento */
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .img-escadas { /* Ajuste específico para a imagem de escadas */
+        max-width: 90%; /* Largura máxima */
+    }
+    
+    .rodape {
+        background: linear-gradient(to right, #3e28ae, #509bf5);
+        padding: 10px; /* Reduz o padding */
+        display: flex;
+        flex-direction: column; /* Layout em coluna para telas menores */
+        align-items: center; /* Centraliza os itens */
+        border-radius: 20px;
+        margin: 10px 0; /* Margem superior e inferior */
+    }
+    
+    .rodape .text {
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .rodape__title {
+        font-family: "Montserrat", serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1em; /* Tamanho relativo */
+        margin-bottom: 5px;
+    }
+    
+    .rodape__subtitle {
+        font-family: "Montserrat", serif;
+        color: #ffffff;
+        font-size: 1.2em; /* Tamanho relativo */
+        font-weight: 500;
+    }
+    
+    .dimencoes__video {
+        display: flex;
+        flex-direction: column; /* Layout em coluna para telas menores */
+        max-width: 100%; /* Largura máxima */
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+        margin: 10px auto; /* Centraliza o vídeo */
+        display: block; /* Corrige um possível problema de alinhamento */
+    }
+}
