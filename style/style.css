@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 .body {
     background-color: #f2f1ef;
     background-image: url("../assets/parede de tijolos.jpg");
-    background-size: auto;
-    background-repeat: repeat-y;
+    background-size: cover; /* Melhor para responsividade */
+    background-repeat: no-repeat; /* Evita repetição em telas maiores */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .logo {
-    width: 400px;
-    height: 300px;
+    width: 30%; /* Largura em porcentagem */
+    max-width: 400px; /* Largura máxima para evitar que fique muito grande */
+    height: auto; /* Altura automática para manter a proporção */
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 1% auto; /* Margem automática centraliza e usa porcentagem */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
@@ -22,20 +21,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1% 2%; /* Padding em porcentagem */
 }
 
 .conteudo__principal {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    overflow-x: auto;
+    flex-wrap: wrap; /* Permite quebrar para a próxima linha em telas menores */
+    gap: 1%; /* Gap em porcentagem */
+    overflow-x: auto; /* Mantém a barra de rolagem horizontal se necessário */
+    padding: 1% 2%; /* Padding em porcentagem */
 }
 
 .conteudo__servicos {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 10px;
+    gap: 1%; /* Gap em porcentagem */
     width: 100%;
     align-items: flex-start;
 }
@@ -45,145 +46,79 @@
     list-style: none;
     background-color: #fff;
     border-radius: 20px;
-    gap: 20px;
+    gap: 2%; /* Gap em porcentagem */
     display: flex;
     min-block-size: 40px;
     color: #000;
     font-weight: 600;
-    font-size: 20px;
-    margin: 8px 8px 8px 8px;
-    padding: 20px 20px;
-    margin-left: 10px;
+    font-size: 1.5vw; /* Tamanho da fonte responsivo */
+    margin: 1% 2%; /* Margem em porcentagem */
+    padding: 2% 3%; /* Padding em porcentagem */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-    white-space: nowrap; /* adiciona esta linha */
+    white-space: nowrap;
+    width: 96%; /* Largura para evitar estouro em telas pequenas */
+    box-sizing: border-box; /* Inclui padding e border na largura */
 }
 
 .icones {
-    width: 20px;
-    height: 20px;
-    gap: 10px;
+    width: 1.5vw; /* Largura responsiva */
+    height: 1.5vw; /* Altura responsiva */
+    gap: 1%;
 }
 
-.img-casa {
-    width: 360px;
-    height: 600px;
+/* Estilos de imagem responsivos */
+.img-casa, .img-corredor, .img-corredor2, .img-escadas, .img-fios, .img-garagem, .img-parede, .img-paredes, .img-antes, .img-depois {
+    width: 48%; /* Largura das imagens - ocupa metade da tela */
+    max-width: 600px; /* Largura máxima para evitar que fiquem muito grandes */
+    height: auto; /* Altura automática */
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 1% auto; /* Margem automática para centralizar e responsiva */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-}
-
-.img-corredor {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-corredor2 {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+    display: block; /* Para evitar espaços em branco abaixo das imagens */
 }
 
 .img-escadas {
-    width: 600px;
-    height: 360px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-fios {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-garagem {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-parede {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-paredes {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-antes {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.img-depois {
-    width: 360px;
-    height: 600px;
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
+    width: 98%; /* Largura total para a imagem de escadas */
+    max-width: 900px;
 }
 
 .rodape {
-    
-    bottom: 0;
-    left: 0;
-    right: 0;
     background: linear-gradient(to right, #3e28ae, #509bf5);
-    padding: 15px 40px;
+    padding: 10px; /* Reduz o padding */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Layout em coluna para telas menores */
+    align-items: center; /* Centraliza os itens */
     border-radius: 20px;
-    margin: 8px 8px 8px 8px;
+    margin: 10px 0; /* Margem superior e inferior */
 }
+
 .rodape .text {
-   flex-shrink: 0;
+    text-align: center; /* Centraliza o texto */
 }
+
 .rodape__title {
     font-family: "Montserrat", serif;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1em; /* Tamanho relativo */
+    margin-bottom: 5px;
 }
 
 .rodape__subtitle {
     font-family: "Montserrat", serif;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 1.2em; /* Tamanho relativo */
     font-weight: 500;
-    text-transform: uppercase;
-    word-wrap: break-word;
 }
-
-
 
 .dimencoes__video {
+    display: flex;
+    flex-direction: column; /* Layout em coluna para telas menores */
+    max-width: 100%; /* Largura máxima */
+    height: auto;
     border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1)
-}
-
-.QR-code {
-    margin-left: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    margin: 10px auto; /* Centraliza o vídeo */
+    display: block; /* Corrige um possível problema de alinhamento */
 }
